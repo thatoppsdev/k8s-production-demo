@@ -27,7 +27,7 @@ This setup simulates a **production-grade Kubernetes deployment**, demonstrating
 
 ## Architecture
 
-![Kubernetes Architecture](arch.svg)
+![Kubernetes Architecture](images/arch.svg)
 
 ## Features
 
