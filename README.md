@@ -145,6 +145,6 @@ API calls are routed to `/api` automatically via Ingress.
 ---
 ## Performance Highlights
 
-* Automatic scaling from 2 to 10 pods under load
+* Automatic scaling from 1 to 5 pods under load
 * Zero-downtime deployments with rolling updates
 * Persistent data storage surviving pod restarts
