@@ -25,6 +25,10 @@ This project demonstrates a **fullstack application deployed on Kubernetes** usi
 
 This setup simulates a **production-grade Kubernetes deployment**, demonstrating best practices and industry standards.
 
+## Architecture
+
+![Kubernetes Architecture](arch.svg)
+
 ## Features
 
 * Full **frontend + backend + database** deployment on Kubernetes
@@ -103,8 +107,8 @@ http://fullstack.local
 API calls are routed to `/api` automatically via Ingress.
 
 ---
-
 ## Visuals 📸
+
 * **Pods & Services**
   ![Pods & Services](images/all.png)
 
@@ -132,13 +136,15 @@ API calls are routed to `/api` automatically via Ingress.
 * **Containerization:** Docker
 
 ---
+## Key Challenges Solved
 
-## Portfolio Impact
-
-This project demonstrates:
-
-* **Kubernetes best practices**: StatefulSets, Secrets, ConfigMaps, HPA, Ingress
-* **Fullstack deployment skills**: Frontend + Backend + Database in a cluster
-* **Cloud-native thinking**: Scaling, persistence, and networking
-
+* **Database Persistence:** Implemented StatefulSets with PVCs for data durability
+* **Auto-scaling:** Configured HPA to handle traffic spikes automatically  
+* **Security:** Used Kubernetes Secrets for sensitive credentials
+* **Routing:** Set up Ingress for clean URL routing between services
 ---
+## Performance Highlights
+
+* Automatic scaling from 2 to 10 pods under load
+* Zero-downtime deployments with rolling updates
+* Persistent data storage surviving pod restarts
